@@ -35,13 +35,9 @@
 %-----------------------------------------------------------
 %Variable declarations
 
-%Include Objective
-\newif\ifobjective
-\objectivefalse
-
 %Include High School Info
 \newif\ifhighschool
-\highschooltrue
+%\highschooltrue
 
 %Include Not So Imp
 \newif\ifincludenotsoimp
@@ -49,7 +45,8 @@
 
 %Include Skills
 \newif\ifskills
-\skillstrue
+%\skillstrue
+\skillsfalse
 
 %Include Leadership Info
 \newif\ifleadership
@@ -76,32 +73,29 @@
 
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
 
-  C-1/904, Bramha Majestic & +91 9960838580 (cell)\\
+  C-1/904, Bramha Majestic & +91 9960 838 580 (mobile)\\
   NIBM Road, Kondhwa & adnan.shaikh1806@gmail.com \\
-  Pune, MH, India & 18th June 1995\\
-  411048 & http://www.adnanshaikh.com/\\
+  Pune, MH, India & June 18, 1995\\
+  411048 & www.adnanshaikh.com\\
 \end{tabular*}
 
 \vspace{0.1in}
 
-\ifobjective
-\resheading{Objective}
-\begin{itemize}
-\item
-  To pursue a challenging career and be part of a progressive organization that allows me to enhance my skill set and contribute to real life projects.
-\end{itemize}
-\fi
-
 \resheading{Work Experience}
 \begin{itemize}
 \item
-  \ressubheading{Persistent Systems}{Pune, MH}{Academic Intern}{Aug. 2016 - Dec. 2016}
+  \ressubheading{Persistent Systems}{Pune, India}{Software Engineer}{Jul. 2017 - Present}
   \begin{itemize}
-    \resitem{Worked on an agent-less solution for Accelerite's real time end point detection and response solution dubbed Sentient, in order to get the real time status of nearly 10,000 cross platform enterprise endpoints.}
-    \resitem{Implemented various queries as per the design specification.}
+    \resitem{Working on porting the agent-less Sentient platform from Java to C++  to improve runtime performance.}
   \end{itemize}
 \item
-  \ressubheading{Persistent Systems}{Pune, MH}{Summer Intern}{Jun. 2015 - Aug. 2015}
+  \ressubheading{Persistent Systems}{Pune, India}{Academic Intern}{Aug. 2016 - Dec. 2016}
+  \begin{itemize}
+    \resitem{Designed and implemented an agent-less approach for an end point detection and response solution, in order to get the real time status of nearly 10,000 cross platform enterprise endpoints.}
+    \resitem{Implemented various queries such as security, system alerts, hardware details, running processes, etc. as per the design specification.}
+  \end{itemize}
+\item
+  \ressubheading{Persistent Systems}{Pune, India}{Summer Intern}{Jun. 2015 - Aug. 2015}
   \begin{itemize}
     \resitem{Extended Python 3 by providing support for Devanagari numbers and various Unicode math characters.}
     \resitem{The modified CPython source is capable of doing math in Devanagari numbers and supports math operators in Unicode like union, intersection, subset, etc.}
@@ -112,30 +106,44 @@
 \resheading{Education}
 \begin{itemize}
 \item
-  \ressubheading{Vishwakarma Institute of Technology}{Pune, MH}{Bachelor of Technology in Computer Engineering}{Jul. 2013 - May 2017}
+  \ressubheading{Vishwakarma Institute of Technology}{Pune, India}{Bachelor of Technology in Computer Engineering}{Jul. 2013 - May 2017}
   \begin{itemize}
     \resitem{CPI: 8.03}
+    \resitem{Relevant Coursework: Design \& Analysis of Algorithms, Theory of Computation, Artificial Intelligence, Operating Systems, Distributed Computing}
   \end{itemize}
   \ifhighschool	
 \item
-  \ressubheading{Delhi Public School}{Pune, MH}{12th Grade CBSE}{May 2013}
+  \ressubheading{Delhi Public School}{Pune, India}{12th Grade CBSE}{May 2013}
   \begin{itemize}
     \resitem{Percentage: 76.4\%}
   \end{itemize}
 \item
-  \ressubheading{Delhi Public School}{Pune, MH}{10th Grade CBSE}{May 2011}
+  \ressubheading{Delhi Public School}{Pune, India}{10th Grade CBSE}{May 2011}
   \begin{itemize}
     \resitem{CGPA: 8.6}
   \end{itemize}
   \fi
 \end{itemize}
 
-\ifhighschool
 \pagebreak
-\fi
 
 \resheading{Projects}
 \begin{itemize}
+\item
+  \resprojectsubheading{Source Code Project Visualizer}{Sep. 2017}
+  \begin{itemize}
+    \resitem{A source code browser written in Python 3 that displays the structure of a C++ code base and its include dependencies in an interactive visual graph displayed using Javascript.}
+  \end{itemize}
+\item
+  \resprojectsubheading{Text Amend}{May 2017}
+  \begin{itemize}
+    \resitem{An application that amends text using a recurrent neural network that can correct a subset of grammatical errors written in English. Written in Python using Google's TensorFlow library.}
+  \end{itemize}
+\item
+  \resprojectsubheading{adnanshaikh.com}{Dec. 2016}
+  \begin{itemize}
+    \resitem{Built my website using HTML5 and JavaScript to emulate a terminal interface. Built the accompanying blog with Ghost and Buster.}
+  \end{itemize}
 \item
   \resprojectsubheading{Game Engine}{Jun. 2016 - Present}
   \begin{itemize}
@@ -144,27 +152,13 @@
 \item
   \resprojectsubheading{Genetic Image Re-creator}{May 2016}
   \begin{itemize}
-    \resitem{A work-in-progress project that attempts at recreating an image by generating a random population of images, each consisting of randomly transformed and colored triangles. Ranks the top 2 images closest to the source image and breeds them to form a new population of images with random mutations in each of them following the process of genetic evolution. Implemented using the GTK+ toolkit and C.}
+    \resitem{The application recreates an image by generating a random population of images, each consisting of randomly transformed and colored triangles. Breeds the top 2 images closest to the source image to form a new population of images with random mutations following the process of genetic evolution. Implemented using the GTK+ toolkit and C.}
   \end{itemize}
 \item
   \resprojectsubheading{Travelling Salesman Problem Solver Simulator}{Dec. 2015}
   \begin{itemize}
     \resitem{Written in Python 3, implemented various solutions: Dynamic Programming, nearest neighbor, heuristic algorithms namely 2-opt and 3-opt and interfaced them with the Tkinter GUI kit.}
   \end{itemize}
-  \ifincludenotsoimp
-\item
-  \resprojectsubheading{College Website}{Dec. 2014}
-  \begin{itemize}
-    \resitem{Designed and implemented a proof of concept website for my college using HTML5, CSS3, Javascript and PHP.}
-  \end{itemize}
-  \fi
-  \ifincludenotsoimp
-\item
-  \resprojectsubheading{Calendar Application}{May 2014}
-  \begin{itemize}
-    \resitem{Wrote a calendar app using the WinBGIm graphics library.}
-  \end{itemize}
-  \fi
 \end{itemize}
 
 \ifskills
@@ -180,20 +174,20 @@
 \fi
 
 \ifleadership
-\resheading{Leadership Activities}
+\resheading{Organizations}
 \begin{itemize}
 \item
-  \ressubheading{Geekfest Pune}{Pune, MH}{Co-founder}{Sep. 2014 - Present}
+  \ressubheading{Geekfest Pune}{Pune, India}{Co-founder}{Sep. 2014 - Present}
   \begin{itemize}
-    \resitem{Organized from scratch the first of its kind Geekfest in Pune, that aimed at bringing together people who share a passion for art, design, gaming, tech, movies, literature and more.}
+    \resitem{Co-founded an annual not-for-profit event to bring together creative people who share a passion for art, design, technology, literature, etc. to share well-formed ideas, interact and connect with each other.}
     \resitem{More than 60 attendees in the first edition, followed by 110 attendees in its second year.}
   \end{itemize}
 \item
-  \ressubheading{AIESEC in Pune}{Pune, MH}{Team Leader of Business Development}{Aug. 2014 - Jul. 2015}
+  \ressubheading{AIESEC in Pune}{Pune, India}{Team Leader of Business Development}{Aug. 2014 - Jul. 2015}
   \begin{itemize}
-    \resitem{Worked on organizing an annual stakeholders\textquotesingle \ summit dubbed NEXUS’.}
+    \resitem{Worked on gathering sponsorships for organizing an annual stakeholders\textquotesingle \ summit dubbed NEXUS’.}
     \resitem{The event aimed towards bringing the clients and stakeholders of AIESEC in Pune to gather around to discourse the theme of the evening and network with each other.}
-    \resitem{Dealt with HR heads to help their organization hire globally competent, requirement specific employees.}
+    \resitem{Dealt with HR heads to help their organization hire globally competent \& requirement specific employees.}
   \end{itemize}
 \end{itemize}
 \fi
