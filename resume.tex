@@ -19,6 +19,8 @@
 
 %-----------------------------------------------------------
 %Custom commands
+\newcommand{\ts}{\textsuperscript}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++ }}}
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
 \newcommand{\ressubheading}[4]{
@@ -86,12 +88,17 @@
 \item
   \ressubheading{Persistent Systems}{Pune, India}{Software Engineer}{Jul. 2017 - Present}
   \begin{itemize}
-    \resitem{Working on porting the agent-less Sentient platform from Java to C++  to improve runtime performance.}
+    \resitem{Worked in an agile team using Scrum methodologies.}
+    \resitem{Worked on porting Sentient's agent-less client from Java to \CC to improve runtime performance and reduce its memory footprint.}
+    \resitem{Converted the client from a console application to a Win32 service.}
+    \resitem{Designed and wrote a thread safe logger to speed up debugging in service mode.}
+    \resitem{Modelled various sequence diagrams of the system to add to its documentation.}
   \end{itemize}
 \item
   \ressubheading{Persistent Systems}{Pune, India}{Academic Intern}{Aug. 2016 - Dec. 2016}
   \begin{itemize}
     \resitem{Designed and implemented an agent-less approach for an end point detection and response solution, in order to get the real time status of nearly 10,000 cross platform enterprise endpoints.}
+    \resitem{Wrote a Windows DLL in \CC to interface COM/DCOM functions over to Java using the Java Native Interface.}
     \resitem{Implemented various queries such as security, system alerts, hardware details, running processes, etc. as per the design specification.}
   \end{itemize}
 \item
@@ -108,7 +115,7 @@
 \item
   \ressubheading{Vishwakarma Institute of Technology}{Pune, India}{Bachelor of Technology in Computer Engineering}{Jul. 2013 - May 2017}
   \begin{itemize}
-    \resitem{CPI: 8.03}
+    \resitem{1\ts{st} Class with Distinction}
     \resitem{Relevant Coursework: Design \& Analysis of Algorithms, Theory of Computation, Artificial Intelligence, Operating Systems, Distributed Computing}
   \end{itemize}
   \ifhighschool	
