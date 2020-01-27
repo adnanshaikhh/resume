@@ -1,6 +1,7 @@
 \documentclass[letterpaper,12pt]{article}
 
   %-----------------------------------------------------------
+
   \usepackage[empty]{fullpage}
   \usepackage{color}
   \usepackage[document]{ragged2e}
@@ -19,11 +20,12 @@
   \addtolength{\textheight}{1.0in}
   
   %-----------------------------------------------------------
+
   %Custom commands
   \newcommand{\ts}{\textsuperscript}
   \def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++ }}}
   \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-  \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+  \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{0.989\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
   \newcommand{\ressubheading}[4]{
     \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
@@ -33,48 +35,10 @@
     \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{#2} \\
     \end{tabular*}\vspace{-6pt}}
-  %-----------------------------------------------------------
   
   %-----------------------------------------------------------
-  %Variable declarations
   
-  %Include High School Info
-  \newif\ifhighschool
-  %\highschooltrue
-  
-  %Include Not So Imp
-  \newif\ifincludenotsoimp
-  \includenotsoimptrue
-  
-  %Include Skills
-  \newif\ifskills
-  %\skillstrue
-  \skillsfalse
-  
-  %Include Leadership Info
-  \newif\ifprojects
-  %\projectstrue
-  \projectsfalse
-  
-  %Include Leadership Info
-  \newif\ifleadership
-  %\leadershiptrue
-  \leadershipfalse
-  
-  %Include One Page
-  \newif\ifonepage
-  %\onepagetrue
-  
-  \ifonepage
-  \objectivefalse
-  \highschoolfalse
-  \includenotsoimpfalse
-  \skillsfalse
-  \leadershipfalse    
-  \fi
-  %-----------------------------------------------------------
-  
-  \begin{document}
+\begin{document}
   
   \begin{center}
     \textbf{\Large Adnan Shaikh}\\
@@ -85,9 +49,38 @@
     \href{https://www.adnanshaikh.com}{www.adnanshaikh.com} \rule[-0.4ex]{0.08ex}{1.0em} \href{https://github.com/adyshake}{github.com/adyshake}\\
     Dallas, TX \\
   \end{center}
-  
+
+  \resheading{Education}
+  \begin{itemize}
+  \item
+    \ressubheading{The University of Texas at Dallas}{Dallas, TX}{Master of Science in Computer Science}{Aug. 2019 - Expected May 2021}
+    \begin{itemize}
+      \resitem {GPA: 3.67/4.00}
+      \resitem{Relevant Coursework: Design \& Analysis of Algorithms, Cloud Computing, Machine Learning, Big Data Management, Computer Vision}
+    \end{itemize}
+  \item
+    \ressubheading{Vishwakarma Institute of Technology}{Pune, India}{Bachelor of Technology in Computer Engineering}{Jul. 2013 - May 2017}
+    \begin{itemize}
+      \resitem {GPA: 8.03/10, Graduated 1\ts{st} Class with Distinction}
+      \resitem {Final Year Project: Grammar correction using a Recurrent Neural Network}
+      % \resitem{Relevant Coursework: Artificial Intelligence, Operating Systems, Distributed Computing, Business Intelligence}
+    \end{itemize}
+  \end{itemize}
+
   \resheading{Work Experience}
   \begin{itemize}
+  % \item
+  %   \ressubheading{Amazon}{Seattle, WA}{Software Development Engineering Intern}{May. 2020 - Aug. 2020}
+  %   \begin{itemize}
+  %     \resitem{Worked on bringing down the patriarchy.}
+  % \end{itemize}
+  % \item
+  %   \ressubheading{Freelance Software Engineer}{Delhi, India}{Full Stack Developer}{Mar. 2019 - Aug. 2019}
+  %   \begin{itemize}
+  %     \resitem{Developed a proof of concept Android app for a client
+  %     that consisted of an SQLite, AWS and Amazon AppSync backend. Built
+  %     entirely in Kotlin.}
+  % \end{itemize}
   \item
     \ressubheading{Persistent Systems}{Pune, India}{Software Engineer}{Jul. 2017 - Mar. 2019}
     \begin{itemize}
@@ -95,8 +88,6 @@
       \resitem{Solved major critical crashes and refactored major portions of the codebase to increase the reliability of the system.}
       \resitem{Converted the client from a console application to a Win32 service.}
       \resitem{Created Windows Installer (MSI) merge modules and installers using InstallShield along with build automation scripts.}
-      %\resitem{Modelled various sequence diagrams of the system to add to its documentation.}
-      %\resitem{Worked in an agile team using Scrum methodologies.}
     \end{itemize}
   \item
     \ressubheading{Persistent Systems}{Pune, India}{Academic Intern}{Aug. 2016 - Dec. 2016}
@@ -114,102 +105,5 @@
       \resitem{The modified CPython source is capable of doing math in Devanagari numbers and supports math operators in Unicode like union, intersection, subset, etc.}
     \end{itemize}
   \end{itemize}
-  
-  \resheading{Education}
-  \begin{itemize}
-  \item
-    \ressubheading{University of Texas at Dallas}{Dallas, TX}{Master of Science in Computer Science}{Aug. 2019 - Expected May 2021}
-    \begin{itemize}
-      \resitem {GPA: 3.67/4.00}
-    \end{itemize}
-  \item
-    \ressubheading{Vishwakarma Institute of Technology}{Pune, India}{Bachelor of Technology in Computer Engineering}{Jul. 2013 - May 2017}
-    \begin{itemize}
-      \resitem {Graduated 1\ts{st} Class with Distinction. GPA: 8.03/10}
-      \resitem {Final Year Project: Grammar correction using a Recurrent Neural Network}
-      \resitem{Relevant Coursework: Design \& Analysis of Algorithms, Theory of Computation, Artificial Intelligence, Operating Systems, Distributed Computing, Business Intelligence}
-    \end{itemize}
-    \ifhighschool	
-  \item
-    \ressubheading{Delhi Public School}{Pune, India}{12th Grade CBSE}{May 2013}
-    \begin{itemize}
-      \resitem{Percentage: 76.4\%}
-    \end{itemize}
-  \item
-    \ressubheading{Delhi Public School}{Pune, India}{10th Grade CBSE}{May 2011}
-    \begin{itemize}
-      \resitem{CGPA: 8.6}
-    \end{itemize}
-    \fi
-  \end{itemize}
-  
-  \pagebreak
-  
-  \ifprojects
-  \resheading{Projects}
-  \begin{itemize}
-  \item
-    \resprojectsubheading{Source Code Project Visualizer}{Sep. 2017}
-    \begin{itemize}
-      \resitem{A source code browser written in Python 3 that displays the structure of a C++ code base and its include dependencies in an interactive visual graph displayed using Javascript.}
-    \end{itemize}
-  \item
-    \resprojectsubheading{Text Amend}{May 2017}
-    \begin{itemize}
-      \resitem{An application that amends text using a recurrent neural network that can correct a subset of grammatical errors written in English. Written in Python using Google's TensorFlow library.}
-    \end{itemize}
-  \item
-    \resprojectsubheading{adnanshaikh.com}{Dec. 2016}
-    \begin{itemize}
-      \resitem{Built my website using HTML5 and JavaScript to emulate a terminal interface. Built the accompanying blog with Ghost and Buster.}
-    \end{itemize}
-  \item
-    \resprojectsubheading{Game Engine}{Jun. 2016 - Present}
-    \begin{itemize}
-      \resitem{Currently working on a game engine written in C++ using the OpenGL API. Supports the following features: free-roaming FPS camera, .obj object file loading, texture loading and phong lighting.}
-    \end{itemize}
-  \item
-    \resprojectsubheading{Genetic Image Re-creator}{May 2016}
-    \begin{itemize}
-      \resitem{The application recreates an image by generating a random population of images, each consisting of randomly transformed and colored triangles. Breeds the top 2 images closest to the source image to form a new population of images with random mutations following the process of genetic evolution. Implemented using the GTK+ toolkit and C.}
-    \end{itemize}
-  \item
-    \resprojectsubheading{Travelling Salesman Problem Solver Simulator}{Dec. 2015}
-    \begin{itemize}
-      \resitem{Written in Python 3, implemented various solutions: Dynamic Programming, nearest neighbor, heuristic algorithms namely 2-opt and 3-opt and interfaced them with the Tkinter GUI kit.}
-    \end{itemize}
-  \end{itemize}
-  \fi
-  
-  \ifskills
-  \resheading{Skills}
-  \begin{description}
-  \item[Languages:]
-    C/C{}\verb!++!, Java, Python, Bourne Shell
-  \item[Tools:]
-    MS Visual Studio, SVN, Git, Emacs, Make, Maven
-  \item[Miscellaneous:]
-    Great troubleshooting and debugging skills
-  \end{description}
-  \fi
-  
-  \ifleadership
-  \resheading{Organizations}
-  \begin{itemize}
-  \item
-    \ressubheading{Geekfest Pune}{Pune, India}{Co-founder}{Sep. 2014 - Present}
-    \begin{itemize}
-      \resitem{Co-founded an annual not-for-profit event to bring together creative people who share a passion for art, design, technology, literature, etc. to share well-formed ideas, interact and connect with each other.}
-      \resitem{More than 60 attendees in the first edition, followed by 110 attendees in its second year.}
-    \end{itemize}
-  \item
-    \ressubheading{AIESEC in Pune}{Pune, India}{Team Leader of Business Development}{Aug. 2014 - Jul. 2015}
-    \begin{itemize}
-      \resitem{Worked on gathering sponsorships for organizing an annual stakeholders\textquotesingle \ summit dubbed NEXUS’.}
-      \resitem{The event aimed towards bringing the clients and stakeholders of AIESEC in Pune to gather around to discourse the theme of the evening and network with each other.}
-      \resitem{Dealt with HR heads to help their organization hire globally competent \& requirement specific employees.}
-    \end{itemize}
-  \end{itemize}
-  \fi
-  
-  \end{document}
+
+\end{document}
