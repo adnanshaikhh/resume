@@ -89,10 +89,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {The University of Texas at Dallas}{Dallas, TX}
-      {Master of Science in Computer Science;  GPA: 3.80}{Aug. 2019 -- Expected May 2021}
+      {Master of Science in Computer Science;  GPA: 3.80}{Aug. 2019 - Expected May 2021}
     \resumeSubheading
       {Vishwakarma Institute of Technology}{Pune, India}
-      {Bachelor of Technology in Computer Engineering;  GPA: 8.03/10}{Jul. 2013 -- May 2017}
+      {Bachelor of Technology in Computer Engineering;  GPA: 8.03/10}{Jul. 2013 - May 2017}
   \resumeSubHeadingListEnd
 
 
@@ -103,12 +103,17 @@
     \resumeSubheading
       {Amazon}{Seattle, WA}
       {Software Engineer Intern}{May 2020 - Aug. 2020}
-      % \resumeItemListStart
-      %   \resumeItem{Credit Card}
-      %     {Worked on the Amazon Business Payments team  working on features from the BPP team’s tech roadmap.}
-      %   \resumeItem{Patriarchy}
-      %     {Took down the patriarchy from within.}
-      % \resumeItemListEnd
+      \resumeItemListStart
+        \resumeItem{Migrate to AWS}
+          {Migrated serving the frontend of an existing tightly coupled monolithic
+          service written with SpringMVC and moved it to AWS using S3, Amplify and
+          CloudFront. This decoupled frontend allowed our team to launch our product
+          more effectively in multiple marketplaces.}
+        \resumeItem {CI/CD}
+          {Set up a continous integration/depolyment solution on AWS
+          using CDK, CodeCommit, CodeBuild, CodePipeline and Lambda along with metrics to
+          track API usage and alarm on-calls in case of excessive errors.}
+      \resumeItemListEnd
       
 % --------Multiple Positions Heading------------
 
@@ -123,8 +128,6 @@
           {Ported an agent-less client from Java to \CC as a Win32 service to improve runtime performance and reduce its memory footprint for low-spec ATMs.}
         \resumeItem{Updater}
           {Implemented a separate updater service to handle seamless background updates of the main application.}
-        \resumeItem{Reliability}
-          {Solved major critical crashes and refactored major portions of the codebase to increase the reliability of the system.}
         \resumeItem{Installer}
           {Created Windows Installer (MSI) merge modules and installers using InstallShield along with build automation scripts.}
       \resumeItemListEnd
@@ -158,20 +161,21 @@
     \resumeSubItem{Xposed Module}
       {An Xposed module written in Java to disable the explore feed of Instagram by reverse engineering the APK.}
     \resumeSubItem{Freelance Android App}
-      {Developed a proof-of-concept Android app for a client that consisted of an SQLite, GraphQL, AWS and Amazon AppSync backend. Built entirely in Kotlin.}
+    {Developed a proof-of-concept Android app for a client that consisted of an
+    SQLite, GraphQL, AWS Amplify and AppSync backend. Built entirely in Kotlin.}
     \resumeSubItem{Game Engine}
       {Ongoing development of a personal 3D engine to practice graphics techniques. Supports forward rendering, shadow maps and SSAO. Built using \CC14 and OpenGL 3.3}
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: Python, Java, C++, Javascript, SQL}
-     \hfill
-     \textbf{Technologies}{: AWS, Play, React, Kafka, OpenGL}
-   }
- \resumeSubHeadingListEnd
+% \section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Python, Java, C++, Javascript, SQL}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, OpenGL}
+%    }
+%  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
